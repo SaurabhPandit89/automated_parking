@@ -1,0 +1,17 @@
+<%= render :partial => 'command_window/new_command' %>
+<div id="content" style="background-color:#EEEEEE;">
+  <table border="1px" cellspacing="0px" width="100%">
+    <tr>
+      <th>Slot Number</th>
+      <th>Registration Number</th>
+      <th>Color</th>
+    </tr>
+    <% @status.each do |row| %>
+    <tr>
+      <td style="text-align: center"><%= row.slot_number %></td>
+      <td style="text-align: center"><%= row.registration_number %></td>
+      <td style="text-align: center"><%= row.color %></td>
+    </tr>
+    <% end %>
+  </table>
+</div>

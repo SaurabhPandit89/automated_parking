@@ -1,0 +1,20 @@
+<h2 style="text-align: center; text-decoration-color: #999999">Automated Car Parking System</h2>
+
+<div id="header" style="background-color:#FFA500;text-align: center;">
+  <%= form_tag command_window_execute_url do %>
+      <%= text_field_tag 'command', nil, placeholder: 'Enter command ...', size: 50 %>
+      <%= submit_tag 'Execute' %>
+  <% end %>
+  <table align="center" style="text-align: justify">
+    <tr><th>Commands Available :</th></tr>
+    <tr><td>1. create_parking_slot [<i>no. of slots</i>]</td></tr>
+    <tr><td>2. park [<i>registration_number</i>] [<i>colour</i>]</td></tr>
+    <tr><td>3. status </td></tr>
+    <tr><td>4. leave [<i>slot_number</i>]</td></tr>
+    <tr><td>5. regs_no_for_cars_with_color [<i>color</i>]</td></tr>
+    <tr><td>6. slot_no_for_cars_with_color [<i>color</i>]</td></tr>
+    <tr><td>7. slot_no_for_car_with_regs_no [<i>registration_number</i>]</td></tr>
+  </table>
+</div>
+
+<br />
