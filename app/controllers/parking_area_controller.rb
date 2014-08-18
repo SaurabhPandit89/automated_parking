@@ -1,3 +1,6 @@
+# Following controller creates a parking lot if not created already
+# Or else updates the capacity value of the parking value
+
 class ParkingAreaController < ApplicationController
 
   def create

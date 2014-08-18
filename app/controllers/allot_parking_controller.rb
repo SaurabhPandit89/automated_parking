@@ -1,10 +1,12 @@
+# Following controller does the functinality of alloting the parking space for the cars.
+
 class AllotParkingController < ApplicationController
 
   def assign_command
     begin
       eval("#{params[:command]}")
     rescue Exception => e
-      flash[:notice] = "Invalid command '#{params[:command]}' !!!"
+      flash[:notice] = "Invalid command '#{params[:command]}!!!"
       redirect_to :root
     end
   end

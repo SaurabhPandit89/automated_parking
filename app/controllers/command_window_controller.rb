@@ -1,3 +1,5 @@
+# Following controller handles the command requests and route it to proper controller.
+
 class CommandWindowController < ApplicationController
 
   def new
