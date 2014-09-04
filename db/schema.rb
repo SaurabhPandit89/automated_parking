@@ -13,6 +13,9 @@
 
 ActiveRecord::Schema.define(version: 20140816065643) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "allot_parkings", force: true do |t|
     t.integer  "slot_number"
     t.string   "registration_number"
